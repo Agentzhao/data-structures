@@ -1,0 +1,11 @@
+data structures:
+array []
+dictionary {}
+linked list
+stack
+queue
+binary search tree
+
+bst
+leaf - node with 0 childs
+- 0,1,2 children
