@@ -1,0 +1,28 @@
+class BST:
+
+MAX = 15
+
+def __init__(self, data):
+    self.bst = [-1 for x in range(self.MAX)]
+    self.bst[0] = data
+
+def insert(self, data, i=0): # assume valid distinct values
+    if data < self.bst[i]: # go left
+        if self.bst[i] == -1:
+            self.bst[i] = data
+        else:
+            i = (2*i) + 1
+            self.insert(data, i) # recursively insert to left
+    else: # go right
+        if self.bst[i] == -1:
+            self.bst[i] = data
+        else:
+            i = (2*i) + 2
+            self.insert(data, i) # recursively insert to right
+
+# main
+bst = BST(50)
+bst.insert(30)
+bst.insert(70)
+
+# bst.bst
