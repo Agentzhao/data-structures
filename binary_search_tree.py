@@ -65,7 +65,7 @@ class BST:
                 del node
             # case 2: node has 1 child, replace node by its child (no need to delete)
             elif (node.left is None) != (node.right is None):
-                if node.left:
+                if node.left is not None:
                     n = node.left
                 else:
                     n = node.right
